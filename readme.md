@@ -17,6 +17,7 @@ Each step folder can be run (explained more below) and there are scripts for eac
 - `npm run start:2` - runs the "step2" dir
 - `npm run start:3` - runs the "step3" dir
 - `npm run start:4` - runs the "step4" dir
+- `npm run start:5` - runs the "step5" dir
 
 ## The "Steps"
 
@@ -40,3 +41,11 @@ Obviously I don't want to implement a `run` function myself in a real project.
 Building a simple one is just to help with understanding generators.
 The step4 dir uses [co](https://github.com/tj/co) which has a similar syntax,
 but is a full implementation including parallel support.
+
+## Step 5
+
+Step 5 is a little different in that it uses [async/await](https://github.com/lukehoban/ecmascript-asyncawait)
+via Bable to provide a "native" implementation.
+
+There is no need for a "run" or "co" function/library in this case because Babel
+provides those libraries for us. Pretty sweet.

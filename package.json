@@ -8,12 +8,13 @@
     "start:1": "babel-node step1/",
     "start:2": "babel-node step2/",
     "start:3": "babel-node step3/",
-    "start:4": "babel-node step4/"
+    "start:4": "babel-node step4/",
+    "start:5": "babel-node --stage 1 step5/"
   },
   "author": "Doug <douglasdifilippo@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "babel": "^4.7.16",
+    "babel": "^5.5.8",
     "co": "^4.5.4",
     "request": "^2.54.0",
     "request-promise": "^0.4.1"

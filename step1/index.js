@@ -3,5 +3,5 @@ let run = require('./run');
 
 run(function*(){
   let response = yield request('http://getbootstrap.com');
-  console.log(response);
+  console.log(response.substr(0, 500));
 });

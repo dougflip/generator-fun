@@ -2,8 +2,8 @@ function run(genFn){
   let generator = genFn();
   let promise = generator.next().value;
   promise
-    .then(generator.next)
-    .catch(generator.throw)
+    .then(res => gen.next(res))
+    .catch(err => generator.throw(err));
 }
 
 module.exports = run;
